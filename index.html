@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+
+  <body>
+
+    <h1>Weather App</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Temperature</th>
+        </tr>
+      </thead>
+
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <form id="form">
+      <input type="number" id="temperature" required>
+      <button type="submit">Hozzáadás</button>
+    </form>
+
+    <button id="export">Export</button>
+
+    <textarea id="exportText" rows="10"></textarea>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
